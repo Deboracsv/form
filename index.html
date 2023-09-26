@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Validação de E-mail </h1>
-    <form  method="get" autocomplete="on">
-        <fieldset>
-            <legend>E-MAIL</legend>
-            <p>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required  minlength="10" maxlength="20
-                ">
-            </p>
-            <p>
-                <input type="submit" class="enviar" value="Enviar" onclick="validar()">
-                <input type="reset" class="limpar" value="Limpar">
-            </p>
-        </fieldset>
-    </form>
+        <h1>Validação de E-mail </h1>
+        <form  autocomplete="off">
+           <div>
+               <label class="label" for="email" >E-mail:</label>
+               <input class="label" type="email" id="email" placeholder="Digite o seu E-mail" required minlength="10">
+               <small id="textEmail"></small>
+           </div>
+           <button type="submit">Enviar</button>
+           <small id="textForm"></small>
+        </form>
+    
+    
     <script src="cadastro.js"></script>
+   
 </body>
 </html>
